@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Yoga Registration</title>
+	<link rel="stylesheet" type = "text/css" href="styles.css">
+</head>
+<body>
+	
+	
+	<form name="registrationForm" method="post" action="Registration">
+		<h1>Yoga Class Registration</h1>
+		
+		<div class="section">
+			<input type="text" placeholder="Your Name" name="name" required> <br />
+			<input type="email" placeholder="Email ID" name="email" required> <br />
+			<input type="number" placeholder="Contact Number" name="phoneNumber"> <br />
+		</div>
+		<div class="section">
+			<p class="bold">Gender: </p>
+			<input type="radio" name="gender" value="Female">Female <br />
+			<input type="radio" name="gender" value="Male">Male	<br />
+			<input type="radio" name="gender" value="Other" checked="checked">Other <br />
+			<input type="number" placeholder="Age" name="age"> <br />
+		</div>
+		
+		<div class="section">
+			<p class="bold">Batch that fits your timing:</p>
+			<input type="radio" name="appointment" value="Morning 6:30 to 8:30" required>Morning 6:30 to 8:30 <br />
+			<input type="radio" name="appointment" value="Morning 8:30 to 10:30" required>Morning 8:30 to 10:30 <br />
+			<input type="radio" name="appointment" value="Evening 4:30 to 6:30" required>Evening 4:30 to 6:30 <br />
+			<input type="radio" name="appointment" value="Evening 6:30 to 8:30" required>Evening 6:30 to 8:30 <br />
+		</div>
+		
+		<div class="section">
+			<p class="bold">Yoga you want to register for: </p>
+			<input type="checkbox" name="yogaType" value="Anusara">Anusara <br />
+			<input type="checkbox" name="yogaType" value="Ashtanga">Ashtanga <br />
+			<input type="checkbox" name="yogaType" value="Bikram">Bikram <br />
+			<input type="checkbox" name="yogaType" value="Power">Power <br />
+			<input type="checkbox" name="yogaType" value="Jivamukti">Jivamukti <br />
+			<input type="checkbox" name="yogaType" value="Kundlini">Kundlini <br />
+		</div>
+		
+		<div class="section">
+			<p class="bold">Want transport facility: </p>
+			<input type="radio" name="transport" value="Yes" required>Yes <br />
+			<input type="radio" name="transport" value="No" requried>No <br />
+		</div>
+		
+		<div class="section">
+			<h2> Other Details: </h2>
+				<div class="other">
+					<input type="text" placeholder="City" name="city"> <br />
+					<input type="text" placeholder="State" name="state"> <br />
+					<input type="text" placeholder="Country" name="country"> <br />
+					
+					<input type="submit" value="Confirm Registration">
+				</div>
+		</div>
+	</form>
+
+</body>
+</html>
